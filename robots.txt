@@ -1,0 +1,5 @@
+# This file was generated 7 August 2019
+User-agent: *
+Allow: /
+
+https://studio-a-hundred.github.io/sitemap.xml
