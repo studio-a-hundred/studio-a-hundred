@@ -1,0 +1,20 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+  <meta name="title" content="스튜디오일백 - 비즈니스에 입각한 브랜드설계">
+  <meta name="keywords" content="스튜디오일백, 브랜딩, 브랜드디자인, 브랜드디자이너, 웹사이트, 워드프레스, 홈페이지 제작">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <meta property="og:title" content="{{ site.title }} - {% if page.title %}{{ page.title }}{% endif %}">
+  <meta property="og:image" content="{{ "" | relative_url }}" >
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ page.url | preprend: site.url }}">
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="icon" type="image/png" href="{{ "/img/favicon.png" | relative_url }}" />
+</head>

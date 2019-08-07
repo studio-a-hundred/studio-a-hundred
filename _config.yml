@@ -1,0 +1,27 @@
+# Site settings
+title: studio一白
+email: studio.a.hundred@gmail.com
+description: "studio一白 : 비즈니스에 입각한 브랜드설계"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://se-daan.github.io" # the base hostname & protocol for your site
+g-analytics: UA-145066389-1
+
+# Build settings
+markdown: kramdown
+
+# Permalinks
+permalink: none
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Custom collection
+collections:
+  work:
+    output: true
+
+# Plugin
+plugins:
+- jekyll-autoprefixer

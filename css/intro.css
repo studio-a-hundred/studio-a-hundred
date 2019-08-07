@@ -1,0 +1,116 @@
+.ts-headline {
+  display: inline-block;
+}
+
+.top-intro__changeLang {
+  float: right;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 100%;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+}
+.top-intro__changeLang:focus {
+  display: none;
+}
+
+@media only screen and (min-width:600px) {
+  .top-intro__changeLang:hover {
+    background-color: #00f;
+    color: #fff;
+  }
+}
+
+/*link deisgn: move to contact*/
+.link-span {
+  border-bottom: 2px solid #111;
+  font-weight: bold;
+  cursor:pointer;
+}
+@media only screen and (min-width:600px) {
+  .link-span:hover {
+    color: #00f;
+  }
+}
+/*link deisgn: layer popup*/
+  .link-popup {
+    border-bottom: 2px solid #111;
+    font-weight: bold;
+    cursor:pointer;
+  }
+    .link-popup:hover {
+      color: #fff;
+      background-color: #00f;
+      border-bottom: 2px solid #00f;
+    }
+
+  .en {
+    display: none;
+  }
+
+ @media only screen and (max-width:640px) {
+  .gap-intro {
+    display: none;
+  }
+}
+
+  .popup {
+    position: fixed;
+    background-color: rgba(1, 1, 1, 0.4);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .popup:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .popup__close-fullscreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    cursor: default;
+  }
+
+  .popup__container {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    background: #fafafa;
+    z-index: 20;
+    padding: 2rem;
+    color: #111;
+  }
+
+  @media only screen and (max-width:640px) {
+    .popup__container {
+      padding: 1rem;
+    }
+  }
+
+  .popup__close-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .popup__close-btn {
+    font-size: 150%;
+  }
