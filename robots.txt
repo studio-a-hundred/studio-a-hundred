@@ -1,5 +1,10 @@
 # This file was generated 7 August 2019
 User-agent: *
-Allow: /
+Disallow: /_layouts/
+Disallow: /_sass/
+Disallow: /img/
+Disallow: /css/
+Disallow: /js/
+
 
 sitemap: https://studio-a-hundred.github.io/sitemap.xml
