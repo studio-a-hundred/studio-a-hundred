@@ -1,9 +1,9 @@
 # Site settings
 title: studio一白
 email: studio.a.hundred@gmail.com
-description: "studio一白 : 비즈니스에 입각한 브랜드설계"
+description: "스튜디오1.100 : 비즈니스에 입각한 브랜드설계"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://se-daan.github.io" # the base hostname & protocol for your site
+url: "http://studio-a-hundred.github.io" # the base hostname & protocol for your site
 g-analytics: UA-145066389-1
 
 # Build settings
