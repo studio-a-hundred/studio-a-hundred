@@ -26,9 +26,11 @@
 
 .label {
   position: relative;
-  color: blue;
   cursor: pointer;
-  font-size: 120%;
+}
+
+.label:hover{
+  color:#00f;
 }
 
 .label:hover:before {
@@ -48,4 +50,5 @@
   background-color: #555;
   border-radius: 3px;
   pointer-events: none;
+  z-index: 5;
 }
