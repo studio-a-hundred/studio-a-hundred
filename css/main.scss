@@ -24,37 +24,27 @@
 
 @import "04-templates/post";
 
-.label{
- font-weight: 300;       
+.label {
+  position: relative;
+  color: blue;
+  cursor: pointer;
 }
 
-[aria-label] {
-position: relative;
-pointer-events: none;
+.label:hover:before {
+    opacity: 1;
 }
 
-[aria-label]:after {
-content: attr(aria-label);
-display: none;
-position: absolute;
-top: 110%;
-left: 10px;
-z-index: 5;
-pointer-events: none;
-padding: 8px 10px;
-line-height: 15px;
-white-space: nowrap;
-text-decoration: none;
-text-indent: 0;
-overflow: visible;
-font-size: .9em;
-font-weight: normal;
-color: #fff;
-text-shadow: 1px 0 1px #888;
-background-color: #412917;
-border-left: 6px solid #d37092;
--webkit-border-radius: 2px;
-border-radius: 2px;
--webkit-box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
-box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
+.label:before {
+  content: attr(aria-label);
+  opacity: 0;
+  position: absolute;
+  top: 30px;
+  right: -90px;
+  font-size: 14px;
+  width: 100px;
+  padding: 10px;
+  color: #fff;
+  background-color: #555;
+  border-radius: 3px;
+  pointer-events: none;
 }
