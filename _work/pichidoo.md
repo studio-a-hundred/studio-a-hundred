@@ -1,7 +1,7 @@
 ---
 date:             2021-11-11 00:00:00
 title:            "Pichidoo"
-class:            heian
+class:            pichidoo
 description:      "Logo | Visual identity | Package design | Print design | Product video | UX guide | Marketing"
 color:            "#fafafa"
 cover:            "/img/work/pichidoo/pichidoo-cover.gif"
